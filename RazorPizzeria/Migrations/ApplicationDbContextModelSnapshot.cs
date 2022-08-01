@@ -38,7 +38,7 @@ namespace RazorPizzeria.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PizzaOrders");
+                    b.ToTable("PizzaOrders", (string)null);
                 });
 #pragma warning restore 612, 618
         }
