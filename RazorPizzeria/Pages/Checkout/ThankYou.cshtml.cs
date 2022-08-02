@@ -8,9 +8,6 @@ namespace RazorPizzeria.Pages.Checkout
     [BindProperties(SupportsGet = true)]
     public class ThankYouModel : CheckoutModel
     {
-        //public string PizzaName { get; set; }
-        //public float PizzaPrice { get; set; }
-        //public string ImageTitle { get; set; }
         private readonly ApplicationDbContext _context;
         public ThankYouModel(ApplicationDbContext context)
         {
@@ -29,6 +26,7 @@ namespace RazorPizzeria.Pages.Checkout
             PizzaOrder pizzaOrder = new PizzaOrder();
             pizzaOrder.PizzaName = PizzaName;
             pizzaOrder.BasePrice = PizzaPrice;
+            pizzaOrder.Contents = Contents;
             _context.PizzaOrders.Add(pizzaOrder);
             _context.SaveChanges();
         }

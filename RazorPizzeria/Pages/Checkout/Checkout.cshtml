@@ -17,8 +17,8 @@
     }
     if(@Model.PizzaName is null)
     {
-        var Custompizza = new CheckoutModel();
-        Custompizza.PizzaName = "Custom";
+        var customPizza = new CheckoutModel();
+        customPizza.PizzaName = "Custom";
     }
 }
 <div class="align-content-center">
@@ -35,7 +35,7 @@
         }
         <p>Total price for your order is: @Model.PizzaPrice$</p>
         <br />
-        <a class="btn alert-primary mt-1 mx-auto" asp-route-PizzaName="@Model.PizzaName" asp-route-PizzaPrice="@Model.PizzaPrice" asp-area="" asp-page="ThankYou">Confirm Order</a>
+        <a class="btn alert-primary mt-1 mx-auto" asp-route-PizzaName="@Model.PizzaName" asp-route-Contents="@Model.Contents" asp-route-PizzaPrice="@Model.PizzaPrice" asp-area="" asp-page="ThankYou">Confirm Order</a>
         <a class="btn alert-danger mt-1 cancel" href="javascript: history.go(-1)">Cancel Order</a>
     </div>
 </div>
