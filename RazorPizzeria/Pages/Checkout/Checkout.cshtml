@@ -9,17 +9,30 @@
     string imagePath;
     if(Model.ImageTitle is null)
     {
-    imagePath = "~/images/Pizzas/Create.png";
+        imagePath = "~/images/Pizzas/Create.png";
     }
     else
     {
         imagePath = "~/images/Pizzas/" + (@Model.ImageTitle + ".png");
     }
+    if(@Model.PizzaName is null)
+    {
+        var Custompizza = new CheckoutModel();
+        Custompizza.PizzaName = "Custom";
+    }
 }
 <div class="align-content-center">
     <div class="col-3 mx-auto mb-5">
         <img src=@imagePath class="w-100" asp-append-version="true" />
-        <p>Your order for the <strong>@Model.PizzaName Pizza</strong> is ready!</p>
+        @if(@Model.PizzaName is null)
+        {
+            var customPizza = "Custom";
+            <p>Your order for the <strong>@customPizza Pizza</strong> is ready!</p>
+        }
+        else
+        {
+            <p>Your order for the <strong>@Model.PizzaName Pizza</strong> is ready!</p>
+        }
         <p>Total price for your order is: @Model.PizzaPrice$</p>
         <br />
         <a class="btn alert-primary mt-1 mx-auto" asp-route-PizzaName="@Model.PizzaName" asp-route-PizzaPrice="@Model.PizzaPrice" asp-area="" asp-page="ThankYou">Confirm Order</a>
