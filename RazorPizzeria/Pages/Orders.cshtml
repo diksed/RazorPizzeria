@@ -3,42 +3,72 @@
 @{
 }
 
-<h3>Orders</h3>
+<div class="container">
+    <h3>Active Orders</h3>
+    <hr />
+    <table id="activeTable" class="table table-responsive table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Pizza Name</span></th>
+                <th>Contents</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.pizzaOrders)
+                {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.PizzaName</td>
+                        <td>@order.Contents</td>
+                        <td>@order.BasePrice$</td>
+                    </tr>
+                }
+                </tbody>
+                </table>
+</div>
+<br /><br />
+<br /><br />
+
+<h3>Past Orders</h3>
 <hr />
-<table class="table">
+<div class="container">
+<table id="pastTable" class="table table-responsive table-hover">
     <thead>
         <tr>
-            <th>
-                Id
-            </th>
-            <th>
-                Pizza Name
-            </th>
-            <th>
-                Contents
-            </th>
-            <th>
-                Price
-            </th>
+            <th>Id</th>
+            <th>Pizza Name</th>
+            <th>Contents</th>
+            <th>Price</th>
         </tr>
     </thead>
     <tbody>
-        @foreach(var order in Model.pizzaOrders)
-        {
-            <tr>
-                <td>
-                    @order.Id
-                </td>
-                <td>
-                    @order.PizzaName
-                </td>
-                <td>
-                    @order.Contents
-                </td>
-                <td>
-                    @order.BasePrice$
-                </td>
-            </tr>
-        }
+            @foreach (var order in Model.pizzaOrders)
+            {
+                    <tr>
+                        <td>@order.Id</td>
+                        <td>@order.PizzaName</td>
+                        <td>@order.Contents</td>
+                        <td>@order.BasePrice$</td>
+                    </tr>
+            }
     </tbody>
 </table>
+</div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.3.1/b-html5-1.3.1/b-print-1.3.1/r-2.1.1/rg-1.0.0/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/jszip-3.1.3/pdfmake-0.1.27/dt-1.10.15/b-1.3.1/b-html5-1.3.1/b-print-1.3.1/r-2.1.1/rg-1.0.0/datatables.min.js"></script>
+
+<script>
+        $('#activeTable').DataTable({
+            "lengthChange": false,
+            "order": [[0, 'desc']]
+        });
+</script>
+<script>
+        $('#pastTable').DataTable({
+            "lengthChange": false,
+            "order": [[0, 'desc']]
+        });
+</script>

@@ -3,10 +3,10 @@ using RazorPizzeria.Models;
 
 namespace RazorPizzeria.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class PastOrderDbContext : DbContext
     {
         public DbSet<PizzaOrder> PizzaOrders { get; set; }
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public PastOrderDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 
         }

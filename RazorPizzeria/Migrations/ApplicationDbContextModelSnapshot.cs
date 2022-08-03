@@ -9,7 +9,7 @@ using RazorPizzeria.Data;
 
 namespace RazorPizzeria.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(PastOrderDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

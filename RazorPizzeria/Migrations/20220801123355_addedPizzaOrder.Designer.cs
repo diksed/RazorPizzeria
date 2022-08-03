@@ -10,7 +10,7 @@ using RazorPizzeria.Data;
 
 namespace RazorPizzeria.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(PastOrderDbContext))]
     [Migration("20220801123355_addedPizzaOrder")]
     partial class addedPizzaOrder
     {
