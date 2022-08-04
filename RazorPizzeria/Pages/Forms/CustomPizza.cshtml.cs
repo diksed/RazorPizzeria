@@ -56,7 +56,7 @@ namespace RazorPizzeria.Pages.Forms
                 contents += " Beef -";
                 PizzaPrice += 1;
             }
-            return RedirectToPage("/Checkout/Checkout", new {Pizza.PizzaName, PizzaPrice, contents });
+            return RedirectToPage("/Checkout/Checkout", new { Pizza.PizzaName, PizzaPrice, contents });
         }
     }
 }

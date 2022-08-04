@@ -8,6 +8,7 @@ namespace RazorPizzeria.Pages
     public class OrdersModel : PageModel
     {
         public List<PizzaOrder> pizzaOrders = new List<PizzaOrder>();
+        public List<PastOrder> pastOrders = new List<PastOrder>();
         private readonly ApplicationDbContext _context;
         public OrdersModel(ApplicationDbContext context)
         {
