@@ -68,3 +68,18 @@ body {
     right: auto !important;
 }
 
+a.remove:link {
+    text-decoration: none;
+}
+
+a.remove:visited {
+    text-decoration: none;
+}
+
+a.remove:hover {
+    text-decoration: none;
+}
+
+a.remove:active {
+    text-decoration: none;
+}
