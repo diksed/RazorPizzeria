@@ -25,7 +25,7 @@
                         <td>@order.PizzaName</td>
                         <td>@order.Contents</td>
                         <td>@order.BasePrice$</td>
-                        <td><a class="remove" asp-route-Id="@order.Id" asp-route-PizzaName="@order.PizzaName" asp-route-Contents="@order.Contents" asp-route-PizzaPrice="@order.BasePrice" asp-area="" asp-page="Checkout/Delivered"><button class="noselect"><span class='text'>Delivered</span><span class="icon"><img src="~/images/bike.png" height="25px" width="25px"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></span></button></a></td>
+                        <td><a class="remove" asp-route-Id="@order.Id" asp-route-PizzaName="@order.PizzaName" asp-route-Contents="@order.Contents" asp-route-PizzaPrice="@order.BasePrice" asp-page-handler="Order"><button class="noselect"><span class='text'>Delivered</span><span class="icon"><img src="~/images/bike.png" height="25px" width="25px"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></span></button></a></td>
                     </tr>
                 }
                 </tbody>

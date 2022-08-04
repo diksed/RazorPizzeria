@@ -8,6 +8,7 @@ namespace RazorPizzeria.Pages
     [BindProperties(SupportsGet = true)]
     public class OrdersModel : PageModel
     {
+        public int Id { get; set; }
         public string PizzaName { get; set; }
         public float PizzaPrice { get; set; }
         public string Contents { get; set; }
@@ -23,14 +24,24 @@ namespace RazorPizzeria.Pages
             pizzaOrders = _context.PizzaOrders.ToList();
             pastOrders = _context.PastOrders.ToList();
         }
-        public void Order()
+        public void OnGetOrder()
         {
             PizzaOrder pizzaOrder = new PizzaOrder();
+            pizzaOrder.Id = Id;
             pizzaOrder.PizzaName = PizzaName;
             pizzaOrder.BasePrice = PizzaPrice;
             pizzaOrder.Contents = Contents;
-            _context.PizzaOrders.Add(pizzaOrder);
+            _context.PizzaOrders.Remove(pizzaOrder);
             _context.SaveChanges();
+            PastOrder pastOrder = new PastOrder();
+            pastOrder.Id = Id;
+            pastOrder.PizzaName = PizzaName;
+            pastOrder.BasePrice = PizzaPrice;
+            pastOrder.Contents = Contents;
+            _context.PastOrders.Add(pastOrder);
+            _context.SaveChanges();
+            pizzaOrders = _context.PizzaOrders.ToList();
+            pastOrders = _context.PastOrders.ToList();
         }
     }
 }
