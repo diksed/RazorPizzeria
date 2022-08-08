@@ -1,12 +1,10 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Data.SqlClient;
-using RazorPizzeria.Data;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 
-namespace RazorPizzeria.Pages
+namespace RazorPizzeria.Pages.Account
 {
     public class LoginModel : PageModel
     {
@@ -18,7 +16,7 @@ namespace RazorPizzeria.Pages
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid) return Page();
-            if (Credential.UserName == "admin" && Credential.Password == "password")
+            if(Credential.UserName=="admin" && Credential.Password == "password")
             {
                 var claims = new List<Claim>
                 {
