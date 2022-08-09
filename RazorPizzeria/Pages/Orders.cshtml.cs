@@ -6,6 +6,7 @@ using RazorPizzeria.Models;
 
 namespace RazorPizzeria.Pages
 {
+    [Authorize(Policy = "MustBelongToHRDepartment")]    
     [BindProperties(SupportsGet = true)]
     public class OrdersModel : PageModel
     {

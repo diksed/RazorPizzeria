@@ -1,73 +1,16 @@
-html {
-  font-size: 14px;
+ï»¿dhtml {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
-.mainText{
-    padding: 75px 20px;
-}
-
-.mainImage{
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
-    margin: 40px;
-}
-
-.mainSubTitle{
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.smallText{
-    text-align: right;
-    color: grey;
-}
-
-.makeYourOwnDiv{
-    background: grey;
-    margin: 0;
-}
-
-.makeYourOwnText{
-    margin: 100px 0 20px 0;
-    color: white;
-}
-
-
-
-.cancel{
-    float: right;
-}
-
-.table.dataTable thead > tr > th {
-    padding-left: 30px !important;
-    padding-right: initial !important;
-}
-
-.table.dataTable thead .sorting:after,
-.table.dataTable thead .sorting_asc:after,
-.table.dataTable thead .sorting_desc:after {
-    left: 8px !important;
-    right: auto !important;
-}
-
-
-
-pbody {
+dbody {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,10 +29,9 @@ pbody {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.pcontainer {
-
-    width: 130px;
-    height: 255px;
+.dcontainer {
+    width: 220px;
+    height: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,12 +43,10 @@ pbody {
     align-items: center;
 }
 
-.pbox {
-    margin-top: 120px;
-    margin-left: 78px;
+.dbox {
     position: absolute;
-    width: 255px;
-    height: 255px;
+    width: 220px;
+    height: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -128,14 +68,24 @@ pbody {
     transition: box-shadow ease 1s, -webkit-box-shadow ease 1s;
 }
 
-.picon_bg {
-    width: 200px;
-    height: 200px;
-    border-radius: 40px;
+.dicon {
+    position: relative;
+    margin-top: 8px;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-transition-delay: 0.32s;
+    transition-delay: 0.32s;
+    will-change: transform;
+}
+
+.dicon_bg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
     border: 1px solid rgba(225, 227, 232, 0.18);
     -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
     box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
-    background-color: #67605a;
+    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145,17 +95,6 @@ pbody {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-transition: all 2.6s ease;
-    transition: all 1.9s ease;
-    -webkit-transition-delay: 0.32s;
-    transition-delay: 0.32s;
-    will-change: transform;
-}
-
-.picon {
-    margin-left: 70px;
-    position: relative;
-    margin-top: -5px;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
     -webkit-transition-delay: 0.32s;
@@ -163,10 +102,11 @@ pbody {
     will-change: transform;
 }
 
+.dtitle {
+    position: relative;
+}
 
-
-
-.psuper-box:hover .pbox {
+.dsuper-box:hover .box {
     /*   border: 1px solid rgba(225, 227, 232, 0.18); */
     -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
     box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
@@ -174,20 +114,19 @@ pbody {
     transition-delay: 0.32s;
 }
 
-.psuper-box:hover .picon_bg {
+.dsuper-box:hover .dicon_bg {
     -webkit-transform: translateY(-32px) scale(6);
     transform: translateY(-32px) scale(6);
 }
 
-.psuper-box:hover .picon {
+.dsuper-box:hover .dicon {
     -webkit-transform: translateY(-48px) scale(1.4);
     transform: translateY(-48px) scale(1.4);
 }
 
-.psuper-box {
-    margin: 0 130px 130px 0;
-    width: 180px;
-    height: 180px;
+.dsuper-box {
+    width: 220px;
+    height: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -203,17 +142,10 @@ pbody {
     flex-direction: column;
 }
 
-.ptitle {
+.dtext {
     position: relative;
-    text-decoration: none;
-}
-
-.ptext {
-    position: relative;
-    top: -20px;
-    color: #fff;
+    top: -32px;
     width: 200px;
-    text-decoration: none;
     text-align: center;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -221,20 +153,20 @@ pbody {
     transition-delay: 0.32s;
 }
 
-.psuper-box:hover .ptext {
+.dsuper-box:hover .dtext {
     opacity: 0;
     -webkit-transform: translateY(-4px) scale(.8);
     transform: translateY(-4px) scale(.8);
 }
 
-.pbox::after {
-    content: "Margerita pizza deneme yapýyorum.";
+.dbox::after {
+    content: "Discover the attacker's tactics and purposes and find out the identity of the attacker";
     position: absolute;
     width: 170px;
-    top: 210px;
+    top: 111px;
     opacity: 0;
     font-size: 13px;
-    color: #fff;
+    color: #5d6494;
     line-height: 20px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -242,44 +174,13 @@ pbody {
     transition-delay: 0.32s;
 }
 
-.psuper-box:hover .pbox::after {
+.dsuper-box:hover .dbox::after {
     opacity: 1;
 }
 
-.pdr {
+.ddr {
     position: absolute;
     bottom: 16px;
     right: 16px;
     width: 100px;
-}
-
-.ptext.remove:link {
-    text-decoration: none;
-}
-
-.ptext.remove:visited {
-    text-decoration: none;
-}
-
-.ptext.remove:hover {
-    text-decoration: underline;
-}
-
-.ptext.remove:active {
-    text-decoration: none;
-}
-.ptitle.remove:link {
-    text-decoration: none;
-}
-
-.ptitle.remove:visited {
-    text-decoration: none;
-}
-
-.ptitle.remove:hover {
-    text-decoration: underline;
-}
-
-.ptitle.remove:active {
-    text-decoration: none;
 }

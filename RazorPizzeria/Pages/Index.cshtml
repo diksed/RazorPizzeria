@@ -32,13 +32,29 @@
             </div>
             @foreach (var pizza in Model.fakePizzaDB)
             {
-                var imagePath = "~/images/Pizzas/" + (pizza.ImageTitle + ".png");
-                <div class="col-3 mb-5">
-                    <a class="pizza-img" asp-area="" asp-page="Checkout/Checkout" asp-route-PizzaName="@pizza.PizzaName" asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaPrice="@pizza.FinalPrice">
-                        <img src="@imagePath" class="w-100" asp-append-version="true" /></a>
-                        <br />
-                    </div>
+                var imagePath = "/images/Pizzas/" + (pizza.ImageTitle + ".png");
+                <div class="col-sm-12">
+                    <a asp-area="" asp-page="Checkout/Checkout" asp-route-PizzaName="@pizza.PizzaName" asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaPrice="@pizza.FinalPrice">
+                        <div class="psuper-box" style="float:left">
+                            <div class="pcontainer">
+                                <div class="pbox">
+                                    <div class="picon_bg"></div>
+                                </div>
+                                    <div class="picon">
+                                        <img width="130px" height="130px" viewBox="0 0 42 26" src="@imagePath" />
+                                    </div>
+                            </div>
+                            <div class="ptext">
+                                <p class="ptitle">
+                                    @pizza.PizzaName
+                                </p>
+                            </div>
+                        </div</a>
+                        
+                </div>
             }
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" type="text/css" href="~/css/site.css">
