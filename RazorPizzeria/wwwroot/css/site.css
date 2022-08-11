@@ -170,7 +170,7 @@ pbody {
     /*   border: 1px solid rgba(225, 227, 232, 0.18); */
     -webkit-box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
     box-shadow: 0 3px 4px 0 rgba(44, 71, 146, 0.25);
-    -webkit-transition-delay: 0.32s;
+    -webkit-transition-delay: 0.832s;
     transition-delay: 0.32s;
 }
 
@@ -180,12 +180,12 @@ pbody {
 }
 
 .psuper-box:hover .picon {
-    -webkit-transform: translateY(-48px) scale(1.4);
-    transform: translateY(-48px) scale(1.4);
+    -webkit-transform: translateY(30px) scale(1.4);
+    transform: translateY(30px) scale(1.4);
 }
 
 .psuper-box {
-    margin: 0 130px 130px 0;
+    margin: 0 130px 330px 0;
     width: 180px;
     height: 180px;
     display: -webkit-box;
@@ -228,7 +228,7 @@ pbody {
 }
 
 .pbox::after {
-    content: "Margerita pizza deneme yapýyorum.";
+    content: "pizza deneme yapýyorum.";
     position: absolute;
     width: 170px;
     top: 210px;

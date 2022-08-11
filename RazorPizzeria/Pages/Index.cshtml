@@ -15,7 +15,6 @@
             <p class="smallText"><i>Only one pizza per order.</i></p>
     </div>
     <div class="container">
-        <div class="row">
             <div class="col-12 mb-5 mt-5">
                 <div class="w-100 row makeYourOwnDiv">
                     <div class="col-4">
@@ -30,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            @foreach (var pizza in Model.fakePizzaDB)
+        @foreach (var pizza in Model.fakePizzaDB)
             {
                 var imagePath = "/images/Pizzas/" + (pizza.ImageTitle + ".png");
                 <div class="col-sm-12">
@@ -50,10 +49,8 @@
                                 </p>
                             </div>
                         </div</a>
-                        
                 </div>
             }
-        </div>
     </div>
 </div>
 
