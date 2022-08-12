@@ -1,284 +1,57 @@
 ﻿@page
-@model RazorPizzeria.Pages.Index1Model
+@model Index1Model
 @{
-    Layout = null;
+    ViewData["Title"] = "Razor Pizzeria Homepage";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with FoodHut landing page.">
-    <meta name="author" content="Devcrud">
-    <title>FoodHut | Free Bootstrap 4.3.x template</title>
-   
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
-
-    <!-- Bootstrap + FoodHut main styles -->
-	<link rel="stylesheet" href="assets/css/foodhut.css">
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
-    <!-- Navbar -->
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#order">Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                
-            </ul>
-            <a class="navbar-brand m-auto" href="#">
-                <img src="assets/imgs/logo.svg" class="brand-img" alt="">
-                <span class="brand-txt">Razor Pizzeria</span>
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="components.html" class="btn btn-primary ml-xl-4">Components</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- header -->
-    <header id="home" class="header">
-        <div class="overlay text-white text-center">
-            <h1 class="display-2 font-weight-bold my-3">Razor Pizzeria</h1>
-            <h2 class="display-4 mb-5">Always fresh &amp; Delightful</h2>
-            <a class="btn btn-lg btn-primary" href="Forms/CustomPizza">Make Your Own Pizza</a>
-        </div>
-    </header>
-
-     <!-- ORDER Section  -->
-    <div id="order" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
-        <h2 class="section-title py-5">Our Great Selection Of Pizzas</h2>
-        <div class="row justify-content-center">
-            <div class="col-sm-7 col-md-4 mb-5">
-                <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">Foods</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#juices" role="tab" aria-controls="pills-profile" aria-selected="false">Juices</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/margerita.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$4</a></h1>
-                                <h4 class="pt20 pb20">Margerita</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
+<div class="text-center">
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize text-black">
+            Our great selection of Pizzas</h1>
+            <h4>Choose one, or try our Pizza Builder! Then Order and Done!</h4>
+            <h4>No need to give any of your details!</h4>
+            <h4>We already know everything!</h4>
+            <p class="smallText"><i>Only one pizza per order.</i></p>
+    </div>
+    <div class="container">
+            <div class="col-12 mb-5 mt-5">
+                <div class="w-100 row makeYourOwnDiv">
+                    <div class="col-4">
+                        <img src="~/images/Pizzas/Create.png" class="w-100"/>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/bolognese.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Bolognese</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/carbonara.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$6</a></h1>
-                                <h4 class="pt20 pb20">Carbonara</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/meatfeast.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$6</a></h1>
-                                <h4 class="pt20 pb20">MeatFeast</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/mushroom.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Mushroom</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/pepperoni.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Pepperoni</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/seafood.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Seafood</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/vegetarian.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
-                                <h4 class="pt20 pb20">Vegetarian</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
+                    <div class="col-8 align-items-center">
+                        <div class="align-middle makeYourOwnText">
+                            <h3 style="text-align: left;">Create your own Pizza!</h3>
+                            <p style="text-align: left;">Make your own Pizza with our Pizza Creator!</p>
+                            <a class="btn btn-primary" style="float: left" asp-area="" asp-page="Forms/CustomPizza">Try now!</a>   
                         </div>
                     </div>
                 </div>
             </div>
-        <div class="tab-pane fade" id="juices" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <!-- slider başlangıç-->
-            <div class="row">
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border drinks-location">
-                            <img src="assets/imgs/cocacola.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
-                                <h4 class="pt20 pb20">Coca-Cola</h4>
+        @foreach (var pizza in Model.fakePizzaDB)
+            {
+                var imagePath = "/images/Pizzas/" + (pizza.ImageTitle + ".png");
+                <div class="col-sm-12">
+                    <a asp-area="" asp-page="Checkout/Checkout" asp-route-PizzaName="@pizza.PizzaName" asp-route-ImageTitle="@pizza.ImageTitle" asp-route-PizzaPrice="@pizza.FinalPrice">
+                        <div class="psuper-box" style="float:left">
+                            <div class="pcontainer">
+                                <div class="pbox">
+                                    <div class="picon_bg"></div>
+                                </div>
+                                    <div class="picon">
+                                        <img width="130px" height="130px" viewBox="0 0 42 26" src="@imagePath" />
+                                    </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/lemonade.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$29</a></h1>
-                                <h4 class="pt20 pb20">Lemonade</h4>
+                            <div class="ptext">
+                                <p class="ptitle">
+                                    @pizza.PizzaName
+                                </p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/orange-juice.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Orange Juice</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/coffee.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Coffee</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/watermelon-juice.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Watermelon Juice</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/milkshake-chocolate.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Milkshake Chocolate</h4>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <!-- slider bitiş-->
-
-        </div>
-    </div>
-
-   <!--  About Section  -->
-    <div id="about" class="container-fluid wow fadeIn" id="about"data-wow-duration="1.5s">
-        <div class="row">
-            <div class="col-lg-5 has-img-bg"></div>
-            <div class="col-lg-7">
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 py-5 my-5">
-                        <h2 class="mb-4">About Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, quisquam accusantium nostrum modi, nemo, officia veritatis ipsum facere maxime assumenda voluptatum enim! Labore maiores placeat impedit, vero sed est voluptas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita alias dicta autem, maiores doloremque quo perferendis, ut obcaecati harum, <br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum necessitatibus iste,
-                        nulla recusandae porro minus nemo eaque cum repudiandae quidem voluptate magnam voluptatum? <br>Nobis, saepe sapiente omnis qui eligendi pariatur. quis voluptas. Assumenda facere adipisci quaerat. Illum doloremque quae omnis vitae.</p>
-                        <p><b>Lonsectetur adipisicing elit. Blanditiis aspernatur, ratione dolore vero asperiores explicabo.</b></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos ab itaque modi, reprehenderit fugit soluta, molestias optio repellat incidunt iure sed deserunt nemo magnam rem explicabo vitae. Cum, nostrum, quidem.</p>
-                    </div>
+                        </div</a>
                 </div>
-            </div>
-        </div>
+            }
     </div>
+</div>
 
-   
-
-    <!-- CONTACT Section  -->
-    <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
-        <div class="row">
-            <div class="col-md-6 px-0">
-                <div id="map" class="map-border"></div>
-            </div>
-            <div class="col-md-6 px-5 has-height-lg middle-items">
-                <h3>FIND US</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, laboriosam doloremque odio delectus, sunt magnam laborum impedit molestiae, magni quae ipsum, ullam eos! Alias suscipit impedit et, adipisci illo quam.</p>
-                <div class="text-muted">
-                    <p><span class="ti-location-pin pr-3"></span> 12345 Fake ST NoWhere, AB Country</p>
-                    <p><span class="ti-support pr-3"></span> (123) 456-7890</p>
-                    <p><span class="ti-email pr-3"></span>info@website.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- wow.js -->
-    <script src="assets/vendors/wow/wow.js"></script>
-    
-    <!-- google maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- FoodHut js -->
-    <script src="assets/js/foodhut.js"></script>
-
-</body>
-</html>
+<link rel="stylesheet" type="text/css" href="~/css/site.css">
