@@ -1,16 +1,3 @@
-/*!
-=========================================================
-* FoodHut Landing page
-=========================================================
-
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 :root {
   --blue: #79A9F5;
   --indigo: #C45F90;
@@ -1162,8 +1149,9 @@ pre code {
     -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
-    max-width: 22%;
-    left: 5%;
+            width: 50%;
+            height: 50%;
+            margin: auto;
     margin-bottom: 15px;
   }
   .col-md-4 {
@@ -7231,7 +7219,9 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid #495057 !important;
+  border: 4px solid #495057 !important;
+  border-radius: 5%;
+  background-color: #853924;
 }
 
 .border-top {
@@ -11408,4 +11398,22 @@ pre {
 
 .drinks-location{
     margin-bottom: 10%;
+}
+
+.order-btn {
+    color: #fff;
+    background-color: #4f732c;
+}
+
+a.order-primary:hover, a.order-primary:focus {
+    color: #fff;
+    background-color: #ed0031;
+}
+a.order-btn:hover{
+    color: #fff;
+}
+
+a.order-primary:focus, a.order-primary.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 33, 79, 0.5);
 }

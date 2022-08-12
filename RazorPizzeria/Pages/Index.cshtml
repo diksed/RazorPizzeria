@@ -7,19 +7,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
     <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <link rel="stylesheet" href="~/assets/css/Slider.css" />
 
     <!-- Bootstrap + FoodHut main styles -->
-	<link rel="stylesheet" href="assets/css/foodhut.css">
+    <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+
     <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
-                
+
             </ul>
             <a class="navbar-brand m-auto" href="#">
                 <img src="assets/imgs/logo.svg" class="brand-img" alt="">
@@ -76,151 +76,220 @@
                 </ul>
             </div>
         </div>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/margerita.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$4</a></h1>
-                                <h4 class="pt20 pb20">Margerita</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="foods" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+                <input type="radio" name="slider" id="slide7">
+                <input type="radio" name="slider" id="slide8">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/margerita.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a class="badge badge-primary">$4</a></h1>
+                                                <h4 class="pt20 pb20">Margerita</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/bolognese.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Bolognese</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/bolognese.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
+                                                <h4 class="pt20 pb20">Bolognese</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/carbonara.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$6</a></h1>
-                                <h4 class="pt20 pb20">Carbonara</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/carbonara.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$6</a></h1>
+                                                <h4 class="pt20 pb20">Carbonara</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/meatfeast.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$6</a></h1>
+                                                <h4 class="pt20 pb20">MeatFeast</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/meatfeast.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$6</a></h1>
-                                <h4 class="pt20 pb20">MeatFeast</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            <div class="slide slide_5">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/mushroom.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
+                                                <h4 class="pt20 pb20">Mushroom</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/mushroom.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Mushroom</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            <div class="slide slide_6">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/pepperoni.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
+                                                <h4 class="pt20 pb20">Pepperoni</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/pepperoni.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Pepperoni</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            <div class="slide slide_7">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/seafood.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
+                                                <h4 class="pt20 pb20">Seafood</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/seafood.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$5</a></h1>
-                                <h4 class="pt20 pb20">Seafood</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="assets/imgs/vegetarian.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
-                                <h4 class="pt20 pb20">Vegetarian</h4>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                            <div class="slide slide_8">
+                                <div class="slide-content">
+                                    <div class="col-md-3">
+                                        <div class="card bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/vegetarian.png" class="rounded-0 card-img-top mg-responsive">
+                                            <div class="card-body">
+                                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
+                                                <h4 class="pt20 pb20">Vegetarian</h4>
+                                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa provident illum officiis fugit laudantium voluptatem sit iste delectus qui ex. </p>
+                                                <h1 class="text-center mb-4"><a href="#" class="badge order-btn">Order Now!</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                    <label for="slide7"></label>
+                    <label for="slide8"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div> 
+        </div>
         <div class="tab-pane fade" id="juices" role="tabpanel" aria-labelledby="pills-profile-tab">
             <!-- slider başlangıç-->
             <div class="row">
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border drinks-location">
-                            <img src="assets/imgs/cocacola.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
-                                <h4 class="pt20 pb20">Coca-Cola</h4>
-                            </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card bg-transparent border drinks-location">
+                        <img src="assets/imgs/cocacola.png" class="drinks rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Coca-Cola</h4>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/lemonade.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$29</a></h1>
-                                <h4 class="pt20 pb20">Lemonade</h4>
-                            </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card bg-transparent border">
+                        <img src="assets/imgs/lemonade.png" class="drinks rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$29</a></h1>
+                            <h4 class="pt20 pb20">Lemonade</h4>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/orange-juice.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Orange Juice</h4>
-                            </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card bg-transparent border">
+                        <img src="assets/imgs/orange-juice.png" class="drinks rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
+                            <h4 class="pt20 pb20">Orange Juice</h4>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/coffee.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Coffee</h4>
-                            </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card bg-transparent border">
+                        <img src="assets/imgs/coffee.png" class="drinks rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
+                            <h4 class="pt20 pb20">Coffee</h4>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/watermelon-juice.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Watermelon Juice</h4>
-                            </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card bg-transparent border">
+                        <img src="assets/imgs/watermelon-juice.png" class="drinks rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
+                            <h4 class="pt20 pb20">Watermelon Juice</h4>
                         </div>
                     </div>
-                    <div class="col-md-4 my-3 my-md-0">
-                        <div class="card bg-transparent border">
-                            <img src="assets/imgs/milkshake-chocolate.png" class="drinks rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
-                                <h4 class="pt20 pb20">Milkshake Chocolate</h4>
-                            </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card bg-transparent border">
+                        <img src="assets/imgs/milkshake-chocolate.png" class="drinks rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a href="#" class="badge badge-primary">$3</a></h1>
+                            <h4 class="pt20 pb20">Milkshake Chocolate</h4>
                         </div>
                     </div>
+                </div>
             </div>
             <!-- slider bitiş-->
-
         </div>
     </div>
 
@@ -242,7 +311,7 @@
         </div>
     </div>
 
-   
+
 
     <!-- CONTACT Section  -->
     <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
@@ -261,8 +330,11 @@
             </div>
         </div>
     </div>
-    
-	<!-- core  -->
+
+
+    <script src="~/assets/js/Slider.js"></script>
+
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
@@ -271,7 +343,7 @@
 
     <!-- wow.js -->
     <script src="assets/vendors/wow/wow.js"></script>
-    
+
     <!-- google maps -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
