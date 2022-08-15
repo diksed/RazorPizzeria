@@ -11417,3 +11417,9 @@ a.order-primary:focus, a.order-primary.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(255, 33, 79, 0.5);
 }
+
+.seeAll{
+    margin-left: 600%;
+    height: 100%;
+    width: 100%;
+}

@@ -22,7 +22,10 @@ builder.Services.
         options.LoginPath = "/Login";
         options.AccessDeniedPath = "/Checkout/AccessDenied";
         options.Cookie.HttpOnly = true;
+        options.SlidingExpiration = true;
+        options.ExpireTimeSpan = TimeSpan.FromDays(1);
     });
+
 
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 //    .AddCookie(options =>
