@@ -116,7 +116,6 @@
     #slide1:checked ~ #controls label:nth-child(2),
     #slide2:checked ~ #controls label:nth-child(3),
     #slide3:checked ~ #controls label:nth-child(4),
-    #slide3:checked ~ #controls label:nth-child(4),
     #slide4:checked ~ #controls label:nth-child(5),
     #slide5:checked ~ #controls label:nth-child(6),
     #slide6:checked ~ #controls label:nth-child(7),
