@@ -1,4 +1,4 @@
-﻿var autoplayInterval = 7500;
+﻿var autoplayInterval = 6500;
 var autoplayTimer = null;
 var autoplay = true;
 var newIndex = 1;
@@ -29,4 +29,13 @@ function navigateSlider() {
         slide4.checked = true;
         newIndex = 0;
     }
+}
+
+function seeAllPizzas() {
+    document.getElementById("seeAllDrink").style.display = "none";
+    document.getElementById("seeAllPizza").style.display = "block";
+}
+function seeAllDrinks() {
+    document.getElementById("seeAllPizza").style.display = "none";
+    document.getElementById("seeAllDrink").style.display = "block";
 }

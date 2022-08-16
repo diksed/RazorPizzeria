@@ -9,14 +9,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-
     <link rel="stylesheet" href="assets/vendors/animate/animate.css">
     <link rel="stylesheet" href="~/assets/css/Slider.css" />
     <link rel="stylesheet" href="~/assets/css/Slider2.css" />
-
-    <!-- Bootstrap + FoodHut main styles -->
     <link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -69,13 +65,16 @@
             <div class="col-sm-7 col-md-4 mb-5">
                 <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">Foods</a>
+                        <a onclick="seeAllPizzas()" class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#foods" role="tab" aria-controls="pills-home" aria-selected="true">Foods</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#drinks" role="tab" aria-controls="pills-profile" aria-selected="false">Drinks</a>
+                        <a onclick="seeAllDrinks()" class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#drinks" role="tab" aria-controls="pills-profile" aria-selected="false">Drinks</a>
                     </li>
                     <li>
-                        <a class="nav-link seeAll" id="pills-profile-tab" data-toggle="pill" href="#xfoods" role="tab" aria-controls="pills-profile" aria-selected="false">See All</a>
+                        <a class="nav-link seeAll" style="display: block" id="seeAllPizza" id="pills-profile-tab" data-toggle="pill" href="#xfoods" role="tab" aria-controls="pills-profile" aria-selected="false">See All</a>
+                    </li>
+                    <li>
+                        <a class="nav-link seeAll" style="display: none" id="seeAllDrink" id="pills-profile-tab" data-toggle="pill" href="#xdrinks" role="tab" aria-controls="pills-profile" aria-selected="false">See All</a>
                     </li>
                 </ul>
             </div>
@@ -237,7 +236,6 @@
             </div> 
         </div>
         <!--Slider Foods Bitiş-->
-
         <!--See All Foods Başlangıç-->
         <div class="tab-pane fade" id="xfoods" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div class="row">
@@ -334,6 +332,7 @@
         </div>
         <!--See All Foods Bitiş-->
 
+
         <!--Slider Drinks Başlangıç-->
         <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="pills-profile-tab">
             <div id="sslider">
@@ -345,8 +344,6 @@
                 <input type="radio" name="sslider" id="sslide6">
                 <input type="radio" name="sslider" id="sslide7">
                 <input type="radio" name="sslider" id="sslide8">
-
-
                 <div id="sslides">
                     <div id="overflow">
                         <div class="inner">
@@ -418,8 +415,8 @@
                             <div class="sslide sslide_6">
                                 <div class="sslide-content">
                                     <div class="col-md-3">
-                                        <div class="card bg-transparent border my-3 my-md-0">
-                                            <img src="assets/imgs/milkshake-chocolate.png" class="rounded-0 card-img-top mg-responsive">
+                                        <div class="card milkshake bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/milkshake-chocolate.png" class="imgmilkshake rounded-0 card-img-top mg-responsive">
                                             <div class="card-body">
                                                 <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
                                                 <h4 class="pt20 pb20">Milkshake Chocolate</h4>
@@ -431,8 +428,8 @@
                             <div class="sslide sslide_7">
                                 <div class="sslide-content">
                                     <div class="col-md-3">
-                                        <div class="card bg-transparent border my-3 my-md-0">
-                                            <img src="assets/imgs/milkshake-strawberry.png" class="rounded-0 card-img-top mg-responsive">
+                                        <div class="card milkshake bg-transparent border my-3 my-md-0">
+                                            <img src="assets/imgs/milkshake-strawberry.png" class="imgmilkshake rounded-0 card-img-top mg-responsive">
                                             <div class="card-body">
                                                 <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
                                                 <h4 class="pt20 pb20">Milkshake Strawberry</h4>
@@ -466,8 +463,6 @@
                     <label for="sslide6"></label>
                     <label for="sslide7"></label>
                     <label for="sslide8"></label>
-
-
                 </div>
                 <div id="bullets">
                     <label for="sslide1"></label>
@@ -478,6 +473,84 @@
             </div>
         </div>
         <!--Slider Drinks Bitiş-->
+        <!--See All Drinks Başlangıç-->
+        <div class="tab-pane fade" id="xdrinks" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/cocacola.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Coca-Cola</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/lemonade.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Lemonade</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/orange-juice.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Orange Juice</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/Coffee.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Coffee</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/watermelon-juice.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Watermelon Juice</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/milkshake-chocolate.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Milkshake Chocolate</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/Milkshake-Strawberry.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Milkshake Strawberry</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-transparent border my-3 my-md-0">
+                        <img src="assets/imgs/tea.png" class="rounded-0 card-img-top mg-responsive">
+                        <div class="card-body">
+                            <h1 class="text-center mb-4"><a class="badge badge-primary">$12</a></h1>
+                            <h4 class="pt20 pb20">Tea</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--See All Foods Bitiş-->
     </div>
 </div>
 
