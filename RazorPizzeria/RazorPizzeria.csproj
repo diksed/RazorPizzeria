@@ -134,6 +134,9 @@
     <None Include="wwwroot\assets\vendors\themify-icons\fonts\themify.ttf" />
     <None Include="wwwroot\assets\vendors\themify-icons\fonts\themify.woff" />
     <None Include="wwwroot\assets\vendors\wow\wow.js" />
+    <None Include="wwwroot\Checkout\css\checkout.css" />
+    <None Include="wwwroot\Checkout\css\payment_feature.css" />
+    <None Include="wwwroot\Checkout\css\payment_styles.css" />
   </ItemGroup>
 
   <ItemGroup>
