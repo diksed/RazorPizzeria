@@ -46,7 +46,7 @@
 
 	JotForm.init(function(){
 	/*INIT-START*/
-      productID = {"0":"input_22_1000","1":"input_22_1001","2":"input_22_1002","3":"input_22_1004","4":"input_22_1005","5":"input_22_1006","6":"input_22_1007","7":"input_22_1008","8":"input_22_1009","9":"input_22_1010","10":"input_22_1011","11":"input_margerita","12":"input_bolognese","13":"input_carbonara","14":"input_meatfeast","15":"input_mushroom","16":"input_pepperoni","17":"input_seafood","18":"input_vegetarian","19":"input_22_1023","20":"input_22_1025","21":"input_22_1026","22":"input_22_1028","23":"input_22_1029","24":"input_22_1030"};
+      productID = {"0":"input_22_1000","1":"input_22_1001","2":"input_22_1002","3":"input_22_1004","4":"input_22_1005","5":"input_22_1006","6":"input_22_1007","7":"input_22_1008","8":"input_22_1009","9":"input_tea","10":"input_milkshakestrawberry","11":"input_margerita","12":"input_bolognese","13":"input_carbonara","14":"input_meatfeast","15":"input_mushroom","16":"input_pepperoni","17":"input_seafood","18":"input_vegetarian","19":"input_milkshakechocolate","20":"input_orangejuice","21":"input_lemonade","22":"input_cocacola","23":"input_coffee","24":"input_watermelonjuice"};
       paymentType = "product";
       JotForm.setCurrencyFormat('USD',true, 'point');
       JotForm.totalCounter({"input_22_1000":{"price":"6","quantityField":"input_22_quantity_1000_0"},
@@ -58,8 +58,8 @@
       "input_22_1007":{"price":"8","quantityField":"input_22_quantity_1007_0"},
       "input_22_1008":{"price":"9","quantityField":"input_22_quantity_1008_0"},
       "input_22_1009":{"price":"9","quantityField":"input_22_quantity_1009_0"},
-      "input_22_1010":{"price":"9","quantityField":"input_22_quantity_1010_0"},
-      "input_22_1011":{"price":"7","quantityField":"input_22_quantity_1011_0"},
+      "input_tea":{"price":"3","quantityField":"input_quantity_tea"},
+      "input_milkshakestrawberry":{"price":"4","quantityField":"input_quantity_milkshakestrawberry"},
       "input_margerita":{"price":"4","quantityField":"input_quantity_margerita_0"},
       "input_bolognese":{"price":"5","quantityField":"input_quantity_bolognese"},
       "input_carbonara":{"price":"6","quantityField":"input_quantity_carbonara"},
@@ -68,12 +68,12 @@
       "input_pepperoni":{"price":"5","quantityField":"input_quantity_pepperoni"},
       "input_seafood":{"price":"5","quantityField":"input_quantity_seafood"},
       "input_vegetarian":{"price":"12","quantityField":"input_quantity_vegetarian"},
-      "input_22_1023":{"price":"3","quantityField":"input_22_quantity_1023_0"},
-      "input_22_1025":{"price":"8","quantityField":"input_22_quantity_1025_0"},
-      "input_22_1026":{"price":"8","quantityField":"input_22_quantity_1026_0"},
-      "input_22_1028":{"price":"5","quantityField":"input_22_quantity_1028_0"},
-      "input_22_1029":{"price":"5","quantityField":"input_22_quantity_1029_0"},
-      "input_22_1030":{"price":"5","quantityField":"input_22_quantity_1030_0"}});
+      "input_coffee":{"price":"7","quantityField":"input_quantity_coffee"},
+      "input_orangejuice":{"price":"4","quantityField":"input_quantity_orangejuice"},
+      "input_lemonade":{"price":"3","quantityField":"input_quantity_lemonade"},
+      "input_cocacola":{"price":"3","quantityField":"input_quantity_cocacola"},
+      "input_watermelonjuice":{"price":"5","quantityField":"input_quantity_watermelonjuice"},
+      "input_milkshakechocolate":{"price":"4","quantityField":"input_quantity_milkshakechocolate"}});
       $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
       $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
 JotForm.paymentCategoryHandler(true, true, {}, {});
@@ -88,21 +88,21 @@ JotForm.paymentCategoryHandler(true, true, {}, {});
       {"cid":"2003","connectedCategories":"[\"2003\"]","connectedProducts":"[]","corder":"2","customPrice":"","customPriceSource":"0","description":"Served with crumbled bacon and an orange vinaigrette","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.02.49.png?nc=1\"]","name":"Spinach Salad","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1008","price":"9","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"With bacon, cheddar, avocado, lettuce, and tomato. Served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.03.40.png?nc=1\"]","name":"House Roasted Turkey Club","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1009","price":"9","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Salami, ham, and provolone, oven toasted in a grinder roll and served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.10.24.png?nc=1\"]","name":"Hot Italian Grinder","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1010","price":"9","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Classic BLT plus our twist of fresh avocado on toasted wheat bread.Served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.10.41.png?nc=1\"]","name":"The BLT+AA","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1011","price":"7","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Classic BLT plus our twist of fresh avocado on toasted wheat bread.Served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.10.41.png?nc=1\"]","name":"The BLT+AA","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"tea","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.13.19.png?nc=1\"]","name":"Classic Hamburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"margerita","price":"4","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef topped with Cheddar and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.14.19.png?nc=1\"]","name":"Classic Cheeseburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"bolognese","price":"11","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.15.21.png?nc=1\"]","name":"The \"Works\" Burger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"carbonara","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2006","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried halibut and thick cut french fries served with tartar sauce","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Beer Battered Fish and Chips","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"meatfeast","price":"14","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Topped with our homemade Memphis style BBQ sauce and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Barbecued Short Rib","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"mushroom","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Pan fried and served with wild rice and haricots verts","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Herb Crusted Atlantic Salmon","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"seafood","price":"18","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef topped with Cheddar and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.14.19.png?nc=1\"]","name":"Classic Cheeseburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"bolognese","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.15.21.png?nc=1\"]","name":"The \"Works\" Burger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"carbonara","price":"6","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2006","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried halibut and thick cut french fries served with tartar sauce","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Beer Battered Fish and Chips","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"meatfeast","price":"6","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Topped with our homemade Memphis style BBQ sauce and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Barbecued Short Rib","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"mushroom","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Pan fried and served with wild rice and haricots verts","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Herb Crusted Atlantic Salmon","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"seafood","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried golden and delicious","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.19.57.png?nc=1\"]","name":"French Fries","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"vegetarian","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Three grilled ears of sweet local corn","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.23.26.png?nc=1\"]","name":"Corn on the Cobb","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1022","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Made with our secret house recipe","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.24.15.png?nc=1\"]","name":"Baked Beans","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1023","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2008","connectedCategories":"[\"2008\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half gallon jug of our famous lemonade","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.25.10.png?nc=1\"]","name":"Our Homemade Lemonade","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1025","price":"8","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2008","connectedCategories":"[\"2008\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half gallon jug of our famous iced tea","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.25.51.png?nc=1\"]","name":"Our Homemade Iced Tea","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1026","price":"8","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2009","connectedCategories":"[\"2009\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A slice of our homemade apple pie","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.26.43.png?nc=1\"]","name":"Dutch Apple Pie","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1028","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2009","connectedCategories":"[\"2009\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"A slice of our rich three layer chocolate cake","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.27.35.png?nc=1\"]","name":"German Chocolate Cake","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1029","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2009","connectedCategories":"[\"2009\"]","connectedProducts":"[]","corder":"2","customPrice":"","customPriceSource":"0","description":"Tart and delicious key lime pie, topped with fresh whipped cream","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.28.14.png?nc=1\"]","name":"Key Lime Pie","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1030","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""}]}}
+      {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Three grilled ears of sweet local corn","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.23.26.png?nc=1\"]","name":"Corn on the Cobb","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"milkshakestrawberry","price":"4","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Made with our secret house recipe","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.24.15.png?nc=1\"]","name":"Baked Beans","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"coffee","price":"7","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2008","connectedCategories":"[\"2008\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half gallon jug of our famous lemonade","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.25.10.png?nc=1\"]","name":"Our Homemade Lemonade","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"orangejuice","price":"4","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2008","connectedCategories":"[\"2008\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half gallon jug of our famous iced tea","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.25.51.png?nc=1\"]","name":"Our Homemade Iced Tea","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"lemonade","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2009","connectedCategories":"[\"2009\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A slice of our homemade apple pie","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.26.43.png?nc=1\"]","name":"Dutch Apple Pie","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"cocacola","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2009","connectedCategories":"[\"2009\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"A slice of our rich three layer chocolate cake","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.27.35.png?nc=1\"]","name":"German Chocolate Cake","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"watermelonjuice","price":"5","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2009","connectedCategories":"[\"2009\"]","connectedProducts":"[]","corder":"2","customPrice":"","customPriceSource":"0","description":"Tart and delicious key lime pie, topped with fresh whipped cream","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.28.14.png?nc=1\"]","name":"Key Lime Pie","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"milkshakechocolate","price":"4","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""}]}}
       JotForm.setPhoneMaskingValidator( 'input_11_full', '(###) ###-####' );
 
  JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -730,11 +730,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                   <span class="selected-items-icon">
                   </span>
                 </span>
-                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1028" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="cocacola" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1028" name="q22_menu[][id]" value="1028">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_cocacola" name="q22_menu[][id]" value="cocacola">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -746,13 +746,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1028" class="form-product-container">
+                    <div for="input_cocacola" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1028">
+                          <span class="form-product-name" id="product-name-input_cocacola">
                             Coca-Cola
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1028">
+                          <span class="form-product-description" id="product-name-description-input_cocacola">
                             A slice of our homemade apple pie
                           </span>
                         </div>
@@ -760,7 +760,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1028_price">
+                              <span id="input_cocacola_price">
                                 3.00
                               </span>
                             </span>
@@ -768,9 +768,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1028_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_cocacola" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1028][item_0]" id="input_22_quantity_1028_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_cocacola][item_0]" id="input_quantity_cocacola">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -793,11 +793,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1028" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="lemonade" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1028" name="q22_menu[][id]" value="1028">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_lemonade" name="q22_menu[][id]" value="lemonade">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -809,13 +809,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1028" class="form-product-container">
+                    <div for="input_lemonade" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1028">
+                          <span class="form-product-name" id="product-name-input_lemonade">
                             Lemonade
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1028">
+                          <span class="form-product-description" id="product-name-description-input_lemonade">
                             A slice of our homemade apple pie
                           </span>
                         </div>
@@ -823,7 +823,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1028_price">
+                              <span id="input_lemonade_price">
                                 3.00
                               </span>
                             </span>
@@ -831,9 +831,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1028_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_lemonade" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1028][item_0]" id="input_22_quantity_1028_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_lemonade][item_0]" id="input_quantity_lemonade">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -856,11 +856,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1028" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="orangejuice" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1028" name="q22_menu[][id]" value="1028">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_orangejuice" name="q22_menu[][id]" value="orangejuice">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -872,13 +872,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1028" class="form-product-container">
+                    <div for="input_orangejuice" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1028">
+                          <span class="form-product-name" id="product-name-input_orangejuice">
                             Orange Juice
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1028">
+                          <span class="form-product-description" id="product-name-description-input_orangejuice">
                             A slice of our homemade apple pie
                           </span>
                         </div>
@@ -886,7 +886,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1028_price">
+                              <span id="input_orangejuice_price">
                                 4.00
                               </span>
                             </span>
@@ -894,9 +894,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1028_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_orangejuice" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1028][item_0]" id="input_22_quantity_1028_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_orangejuice][item_0]" id="input_quantity_orangejuice">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -919,11 +919,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1029" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="coffee" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1029" name="q22_menu[][id]" value="1029">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_coffee" name="q22_menu[][id]" value="coffee">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -935,13 +935,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1029" class="form-product-container">
+                    <div for="input_coffee" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1029">
+                          <span class="form-product-name" id="product-name-input_coffee">
                             Coffee
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1029">
+                          <span class="form-product-description" id="product-name-description-input_coffee">
                             A slice of our rich three layer chocolate cake
                           </span>
                         </div>
@@ -949,7 +949,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1029_price">
+                              <span id="input_coffee_price">
                                 7.00
                               </span>
                             </span>
@@ -957,9 +957,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1029_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_coffee" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1029][item_0]" id="input_22_quantity_1029_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_coffee][item_0]" id="input_quantity_coffee">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -982,11 +982,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1030" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="watermelonjuice" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1030" name="q22_menu[][id]" value="1030">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_watermelonjuice" name="q22_menu[][id]" value="watermelonjuice">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -998,13 +998,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1030" class="form-product-container">
+                    <div for="input_watermelonjuice" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1030">
+                          <span class="form-product-name" id="product-name-input_watermelonjuice">
                             Watermelon Juice
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1030">
+                          <span class="form-product-description" id="product-name-description-input_watermelonjuice">
                             Tart and delicious key lime pie, topped with fresh whipped cream
                           </span>
                         </div>
@@ -1012,7 +1012,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1030_price">
+                              <span id="input_watermelonjuice_price">
                                 5.00
                               </span>
                             </span>
@@ -1020,9 +1020,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1030_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_watermelonjuice" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1030][item_0]" id="input_22_quantity_1030_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_watermelonjuice][item_0]" id="input_quantity_watermelonjuice">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -1045,11 +1045,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1030" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="milkshakechocolate" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1030" name="q22_menu[][id]" value="1030">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_milkshakechocolate" name="q22_menu[][id]" value="milkshakechocolate">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -1061,13 +1061,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1030" class="form-product-container">
+                    <div for="input_milkshakechocolate" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1030">
+                          <span class="form-product-name" id="product-name-input_milkshakechocolate">
                             Milkshake Chocolate
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1030">
+                          <span class="form-product-description" id="product-name-description-input_milkshakechocolate">
                             Tart and delicious key lime pie, topped with fresh whipped cream
                           </span>
                         </div>
@@ -1075,7 +1075,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1030_price">
+                              <span id="input_milkshakechocolate_price">
                                 4.00
                               </span>
                             </span>
@@ -1083,9 +1083,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1030_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_milkshakechocolate" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1030][item_0]" id="input_22_quantity_1030_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_milkshakechocolate][item_0]" id="input_quantity_milkshakechocolate">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -1108,11 +1108,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1030" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="milkshakestrawberry" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1030" name="q22_menu[][id]" value="1030">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_milkshakestrawberry" name="q22_menu[][id]" value="milkshakestrawberry">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -1124,13 +1124,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1030" class="form-product-container">
+                    <div for="input_milkshakestrawberry" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1030">
+                          <span class="form-product-name" id="product-name-input_milkshakestrawberry">
                             Milkshake Strawberry
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1030">
+                          <span class="form-product-description" id="product-name-description-input_milkshakestrawberry">
                             Tart and delicious key lime pie, topped with fresh whipped cream
                           </span>
                         </div>
@@ -1138,7 +1138,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1030_price">
+                              <span id="input_milkshakestrawberry_price">
                                 4.00
                               </span>
                             </span>
@@ -1146,9 +1146,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1030_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_milkshakestrawberry" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1030][item_0]" id="input_22_quantity_1030_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_milkshakestrawberry][item_0]" id="input_quantity_milkshakestrawberry">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -1171,11 +1171,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="1030" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2009" active-category="2009" pid="tea" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1030" name="q22_menu[][id]" value="1030">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_tea" name="q22_menu[][id]" value="tea">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -1187,13 +1187,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1030" class="form-product-container">
+                    <div for="input_tea" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1030">
+                          <span class="form-product-name" id="product-name-input_tea">
                             Tea
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1030">
+                          <span class="form-product-description" id="product-name-description-input_tea">
                             Tart and delicious key lime pie, topped with fresh whipped cream
                           </span>
                         </div>
@@ -1201,7 +1201,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1030_price">
+                              <span id="input_tea_price">
                                 3.00
                               </span>
                             </span>
@@ -1209,9 +1209,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1030_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_tea" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1030][item_0]" id="input_22_quantity_1030_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_tea][item_0]" id="input_quantity_tea">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
