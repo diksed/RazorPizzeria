@@ -46,17 +46,33 @@
 
 	JotForm.init(function(){
 	/*INIT-START*/
-      productID = {"0":"input_22_1000","1":"input_22_1001","2":"input_22_1002","3":"input_22_1004","4":"input_22_1005","5":"input_22_1006","6":"input_22_1007","7":"input_22_1008","8":"input_22_1009","9":"input_22_1010","10":"input_22_1011","11":"input_22_1013","12":"input_22_1014","13":"input_22_1015","14":"input_22_1017","15":"input_22_1018","16":"input_22_1019","17":"input_22_1021","18":"input_22_1022","19":"input_22_1023","20":"input_22_1025","21":"input_22_1026","22":"input_22_1028","23":"input_22_1029","24":"input_22_1030"};
+      productID = {"0":"input_22_1000","1":"input_22_1001","2":"input_22_1002","3":"input_22_1004","4":"input_22_1005","5":"input_22_1006","6":"input_22_1007","7":"input_22_1008","8":"input_22_1009","9":"input_22_1010","10":"input_22_1011","11":"input_margerita","12":"input_bolognese","13":"input_carbonara","14":"input_meatfeast","15":"input_mushroom","16":"input_pepperoni","17":"input_seafood","18":"input_vegetarian","19":"input_22_1023","20":"input_22_1025","21":"input_22_1026","22":"input_22_1028","23":"input_22_1029","24":"input_22_1030"};
       paymentType = "product";
       JotForm.setCurrencyFormat('USD',true, 'point');
-      JotForm.totalCounter({"input_22_1000":{"price":"6","quantityField":"input_22_quantity_1000_0"},"input_22_1001":{"price":"7","quantityField":"input_22_quantity_1001_0"},"input_22_1002":{"price":"6","quantityField":"input_22_quantity_1002_0"},
-      "input_22_1004":{"price":"4","quantityField":"input_22_quantity_1004_0"},"input_22_1005":{"price":"4","quantityField":"input_22_quantity_1005_0"},"input_22_1006":{"price":"7","quantityField":"input_22_quantity_1006_0"},
-      "input_22_1007":{"price":"8","quantityField":"input_22_quantity_1007_0"},"input_22_1008":{"price":"9","quantityField":"input_22_quantity_1008_0"},"input_22_1009":{"price":"9","quantityField":"input_22_quantity_1009_0"},
-      "input_22_1010":{"price":"9","quantityField":"input_22_quantity_1010_0"},"input_22_1011":{"price":"7","quantityField":"input_22_quantity_1011_0"},"input_22_1013":{"price":"4","quantityField":"input_22_quantity_1013_0"},
-      "input_22_1014":{"price":"11","quantityField":"input_22_quantity_1014_0"},"input_22_1015":{"price":"12","quantityField":"input_22_quantity_1015_0"},"input_22_1017":{"price":"14","quantityField":"input_22_quantity_1017_0"},
-      "input_22_1018":{"price":"12","quantityField":"input_22_quantity_1018_0"},"input_22_1019":{"price":"18","quantityField":"input_22_quantity_1019_0"},"input_22_1021":{"price":"3","quantityField":"input_22_quantity_1021_0"},
-      "input_22_1022":{"price":"3","quantityField":"input_22_quantity_1022_0"},"input_22_1023":{"price":"3","quantityField":"input_22_quantity_1023_0"},"input_22_1025":{"price":"8","quantityField":"input_22_quantity_1025_0"},
-      "input_22_1026":{"price":"8","quantityField":"input_22_quantity_1026_0"},"input_22_1028":{"price":"5","quantityField":"input_22_quantity_1028_0"},"input_22_1029":{"price":"5","quantityField":"input_22_quantity_1029_0"},
+      JotForm.totalCounter({"input_22_1000":{"price":"6","quantityField":"input_22_quantity_1000_0"},
+      "input_22_1001":{"price":"7","quantityField":"input_22_quantity_1001_0"},
+      "input_22_1002":{"price":"6","quantityField":"input_22_quantity_1002_0"},
+      "input_22_1004":{"price":"4","quantityField":"input_22_quantity_1004_0"},
+      "input_22_1005":{"price":"4","quantityField":"input_22_quantity_1005_0"},
+      "input_22_1006":{"price":"7","quantityField":"input_22_quantity_1006_0"},
+      "input_22_1007":{"price":"8","quantityField":"input_22_quantity_1007_0"},
+      "input_22_1008":{"price":"9","quantityField":"input_22_quantity_1008_0"},
+      "input_22_1009":{"price":"9","quantityField":"input_22_quantity_1009_0"},
+      "input_22_1010":{"price":"9","quantityField":"input_22_quantity_1010_0"},
+      "input_22_1011":{"price":"7","quantityField":"input_22_quantity_1011_0"},
+      "input_margerita":{"price":"4","quantityField":"input_quantity_margerita_0"},
+      "input_bolognese":{"price":"5","quantityField":"input_quantity_bolognese"},
+      "input_carbonara":{"price":"6","quantityField":"input_quantity_carbonara"},
+      "input_meatfeast":{"price":"6","quantityField":"input_quantity_meatfeast"},
+      "input_mushroom":{"price":"5","quantityField":"input_quantity_mushroom"},
+      "input_pepperoni":{"price":"5","quantityField":"input_quantity_pepperoni"},
+      "input_seafood":{"price":"5","quantityField":"input_quantity_seafood"},
+      "input_vegetarian":{"price":"12","quantityField":"input_quantity_vegetarian"},
+      "input_22_1023":{"price":"3","quantityField":"input_22_quantity_1023_0"},
+      "input_22_1025":{"price":"8","quantityField":"input_22_quantity_1025_0"},
+      "input_22_1026":{"price":"8","quantityField":"input_22_quantity_1026_0"},
+      "input_22_1028":{"price":"5","quantityField":"input_22_quantity_1028_0"},
+      "input_22_1029":{"price":"5","quantityField":"input_22_quantity_1029_0"},
       "input_22_1030":{"price":"5","quantityField":"input_22_quantity_1030_0"}});
       $$('.form-product-custom_quantity').each(function(el, i){el.observe('blur', function(){isNaN(this.value) || this.value < 1 ? this.value = '0' : this.value = parseInt(this.value)})});
       $$('.form-product-custom_quantity').each(function(el, i){el.observe('focus', function(){this.value == 0 ? this.value = '' : this.value})});
@@ -73,13 +89,13 @@ JotForm.paymentCategoryHandler(true, true, {}, {});
       {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"With bacon, cheddar, avocado, lettuce, and tomato. Served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.03.40.png?nc=1\"]","name":"House Roasted Turkey Club","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1009","price":"9","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Salami, ham, and provolone, oven toasted in a grinder roll and served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.10.24.png?nc=1\"]","name":"Hot Italian Grinder","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1010","price":"9","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2004","connectedCategories":"[\"2004\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Classic BLT plus our twist of fresh avocado on toasted wheat bread.Served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.10.41.png?nc=1\"]","name":"The BLT+AA","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1011","price":"7","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.13.19.png?nc=1\"]","name":"Classic Hamburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1013","price":"4","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef topped with Cheddar and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.14.19.png?nc=1\"]","name":"Classic Cheeseburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1014","price":"11","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.15.21.png?nc=1\"]","name":"The \"Works\" Burger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1015","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried halibut and thick cut french fries served with tartar sauce","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Beer Battered Fish and Chips","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1017","price":"14","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Topped with our homemade Memphis style BBQ sauce and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Barbecued Short Rib","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1018","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Pan fried and served with wild rice and haricots verts","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Herb Crusted Atlantic Salmon","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1019","price":"18","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
-      {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried golden and delicious","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.19.57.png?nc=1\"]","name":"French Fries","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1021","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.13.19.png?nc=1\"]","name":"Classic Hamburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"margerita","price":"4","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef topped with Cheddar and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.14.19.png?nc=1\"]","name":"Classic Cheeseburger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"bolognese","price":"11","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2005","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.15.21.png?nc=1\"]","name":"The \"Works\" Burger","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"carbonara","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2006","connectedCategories":"[\"2005\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried halibut and thick cut french fries served with tartar sauce","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Beer Battered Fish and Chips","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"meatfeast","price":"14","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Topped with our homemade Memphis style BBQ sauce and served with french fries","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Barbecued Short Rib","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"mushroom","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2006","connectedCategories":"[\"2006\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Pan fried and served with wild rice and haricots verts","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.17.22.png?nc=1\"]","name":"Herb Crusted Atlantic Salmon","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"seafood","price":"18","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
+      {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Deep fried golden and delicious","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.19.57.png?nc=1\"]","name":"French Fries","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"vegetarian","price":"12","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"Three grilled ears of sweet local corn","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.23.26.png?nc=1\"]","name":"Corn on the Cobb","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1022","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2007","connectedCategories":"[\"2007\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Made with our secret house recipe","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.24.15.png?nc=1\"]","name":"Baked Beans","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1023","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
       {"cid":"2008","connectedCategories":"[\"2008\"]","connectedProducts":"[]","corder":"0","customPrice":"","customPriceSource":"0","description":"A half gallon jug of our famous lemonade","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.25.10.png?nc=1\"]","name":"Our Homemade Lemonade","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"1025","price":"8","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""},
@@ -203,11 +219,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                   <span class="selected-items-icon">
                   </span>
                 </span>
-                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1013" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="margerita" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1013" name="q22_menu[][id]" value="1013">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_margerita" name="q22_menu[][id]" value="margerita">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -218,13 +234,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                       <div role="img" aria-label="Classic Hamburger" class="image_area form-product-image-with-options" style="background-image:url(/assets/imgs/margerita.png)">
                       </div>
                     </div>
-                    <div for="input_22_1013" class="form-product-container">
+                    <div for="input_margerita" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1013">
+                          <span class="form-product-name" id="product-name-input_margerita">
                             Margerita
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1013">
+                          <span class="form-product-description" id="product-name-description-input_margerita">
                             A half pound of flame broiled angus beef served with french fries
                           </span>
                         </div>
@@ -232,7 +248,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1013_price">
+                              <span id="input_margerita_price">
                                 4.00
                               </span>
                             </span>
@@ -240,9 +256,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1013_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_margerita_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1013][item_0]" id="input_22_quantity_1013_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_margerita][item_0]" id="input_quantity_margerita_0">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -265,11 +281,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1014" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="bolognese" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1014" name="q22_menu[][id]" value="1014">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_bolognese" name="q22_menu[][id]" value="bolognese">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -281,13 +297,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1014" class="form-product-container">
+                    <div for="input_bolognese" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1014">
+                          <span class="form-product-name" id="product-name-input_bolognese">
                             Bolognese
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1014">
+                          <span class="form-product-description" id="product-name-description-input_bolognese">
                             A half pound of flame broiled angus beef topped with Cheddar and served with french fries
                           </span>
                         </div>
@@ -295,7 +311,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1014_price">
+                              <span id="input_bolognese_price">
                                 5.00
                               </span>
                             </span>
@@ -303,9 +319,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1014_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_bolognese" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1014][item_0]" id="input_22_quantity_1014_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_bolognese][item_0]" id="input_quantity_bolognese">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -328,11 +344,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1015" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="carbonara" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1015" name="q22_menu[][id]" value="1015">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_carbonara" name="q22_menu[][id]" value="carbonara">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -344,13 +360,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1015" class="form-product-container">
+                    <div for="input_carbonara" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1015">
+                          <span class="form-product-name" id="product-name-input_carbonara">
                             Carbonara
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1015">
+                          <span class="form-product-description" id="product-name-description-input_carbonara">
                             A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries
                           </span>
                         </div>
@@ -358,7 +374,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1015_price">
+                              <span id="input_carbonara_price">
                                 6.00
                               </span>
                             </span>
@@ -366,9 +382,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1015_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_carbonara" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1015][item_0]" id="input_22_quantity_1015_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_carbonara][item_0]" id="input_quantity_carbonara">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -391,11 +407,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col4 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1014" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col4 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="meatfeast" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1014" name="q22_menu[][id]" value="1014">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_meatfeast" name="q22_menu[][id]" value="meatfeast">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -407,13 +423,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1014" class="form-product-container">
+                    <div for="input_meatfeast" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1014">
+                          <span class="form-product-name" id="product-name-input_meatfeast">
                             Meat Feast
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1014">
+                          <span class="form-product-description" id="product-name-description-input_meatfeast">
                             A half pound of flame broiled angus beef topped with Cheddar and served with french fries
                           </span>
                         </div>
@@ -421,7 +437,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1014_price">
+                              <span id="input_meatfeast_price">
                                 6.00
                               </span>
                             </span>
@@ -429,9 +445,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1014_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_meatfeast" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1014][item_0]" id="input_22_quantity_1014_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_bolognese][item_0]" id="input_quantity_meatfeast">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -454,11 +470,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator last_p_seperator">
                 </div>
-                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1017" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col1 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="mushroom" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1014" name="q22_menu[][id]" value="1014">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_mushroom" name="q22_menu[][id]" value="mushroom">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -470,13 +486,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1014" class="form-product-container">
+                    <div for="input_mushroom" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1014">
+                          <span class="form-product-name" id="product-name-input_mushroom">
                             Mushroom
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1014">
+                          <span class="form-product-description" id="product-name-description-input_mushroom">
                             A half pound of flame broiled angus beef topped with Cheddar and served with french fries
                           </span>
                         </div>
@@ -484,7 +500,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1014_price">
+                              <span id="input_mushroom_price">
                                 5.00
                               </span>
                             </span>
@@ -492,9 +508,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1014_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_mushroom" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1014][item_0]" id="input_22_quantity_1014_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_mushroom][item_0]" id="input_quantity_mushroom">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -517,11 +533,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1018" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col2 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="pepperoni" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1015" name="q22_menu[][id]" value="1015">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_pepperoni" name="q22_menu[][id]" value="pepperoni">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -533,13 +549,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1015" class="form-product-container">
+                    <div for="input_pepperoni" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1015">
+                          <span class="form-product-name" id="product-name-input_pepperoni">
                             Pepperoni
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1015">
+                          <span class="form-product-description" id="product-name-description-input_pepperoni">
                             A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries
                           </span>
                         </div>
@@ -547,7 +563,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1015_price">
+                              <span id="input_pepperoni_price">
                                 5.00
                               </span>
                             </span>
@@ -555,9 +571,9 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1015_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_carbonara" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1015][item_0]" id="input_22_quantity_1015_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_pepperoni][item_0]" id="input_quantity_pepperoni">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -580,11 +596,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator">
                 </div>
-                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1017" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col3 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="seafood" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1014" name="q22_menu[][id]" value="1014">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_seafood" name="q22_menu[][id]" value="seafood">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -596,10 +612,10 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1014" class="form-product-container">
+                    <div for="input_seafood" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1014">
+                          <span class="form-product-name" id="product-name-input_seafood">
                             Seafood
                           </span>
                           <span class="form-product-description" id="product-name-description-input_22_1014">
@@ -610,7 +626,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1014_price">
+                              <span id="input_seafood_price">
                                 5.00
                               </span>
                             </span>
@@ -620,7 +636,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                       <span class="form-sub-label-container" style="vertical-align:top">
                         <label class="form-sub-label" for="input_22_quantity_1014_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1014][item_0]" id="input_22_quantity_1014_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_seafood][item_0]" id="input_quantity_seafood">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
@@ -643,11 +659,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                 </span>
                 <div class="p_item_separator ">
                 </div>
-                <span class="form-product-item hover-product-item on_col4 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="1018" aria-labelledby="label_22">
+                <span class="form-product-item hover-product-item on_col4 show_image show_desc show_option new_ui" categories="2005" active-category="2005" pid="vegetarian" aria-labelledby="label_22">
                   <div data-wrapper-react="true" class="form-product-item-detail new_ui">
                     <div class="p_col">
                       <div class="p_checkbox">
-                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_22_1015" name="q22_menu[][id]" value="1015">
+                        <input type="checkbox" class="form-checkbox  form-product-input" id="input_vegetarian" name="q22_menu[][id]" value="vegetarian">
                         <div class="checked">
                         </div>
                         <div class="select_border">
@@ -659,13 +675,13 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                         
                       </div>
                     </div>
-                    <div for="input_22_1015" class="form-product-container">
+                    <div for="input_vegetarian" class="form-product-container">
                       <span data-wrapper-react="true">
                         <div class="title_description">
-                          <span class="form-product-name" id="product-name-input_22_1015">
+                          <span class="form-product-name" id="product-name-input_vegetarian">
                             Vegetarian
                           </span>
-                          <span class="form-product-description" id="product-name-description-input_22_1015">
+                          <span class="form-product-description" id="product-name-description-input_vegetarian">
                             A half pound of flame broiled angus beef, toped with cheddar, bacon, and mushrooms. Served with french fries
                           </span>
                         </div>
@@ -673,17 +689,17 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
                           <b>
                             <span data-wrapper-react="true">
                               $
-                              <span id="input_22_1015_price">
-                                12.00
+                              <span id="input_vegetarian_price">
+                                6.00
                               </span>
                             </span>
                           </b>
                         </span>
                       </span>
                       <span class="form-sub-label-container" style="vertical-align:top">
-                        <label class="form-sub-label" for="input_22_quantity_1015_0" style="min-height:13px" aria-hidden="false"> Quantity </label>
+                        <label class="form-sub-label" for="input_quantity_carbonara" style="min-height:13px" aria-hidden="false"> Quantity </label>
                         <span class="select_cont">
-                          <select class="form-dropdown is-active" name="q22_menu[special_1015][item_0]" id="input_22_quantity_1015_0">
+                          <select class="form-dropdown is-active" name="q22_menu[special_vegetarian][item_0]" id="input_quantity_vegetarian">
                             <option value="1"> 1 </option>
                             <option value="2"> 2 </option>
                             <option value="3"> 3 </option>
