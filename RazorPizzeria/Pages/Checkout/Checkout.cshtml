@@ -46,7 +46,7 @@
 
 	JotForm.init(function(){
 	/*INIT-START*/
-      productID = {"0":"input_22_1000","1":"input_22_1001","2":"input_22_1002","3":"input_22_1004","4":"input_22_1005","5":"input_22_1006","6":"input_22_1007","7":"input_22_1008","8":"input_22_1009","9":"input_tea","10":"input_milkshakestrawberry","11":"input_margerita","12":"input_bolognese","13":"input_carbonara","14":"input_meatfeast","15":"input_mushroom","16":"input_pepperoni","17":"input_seafood","18":"input_vegetarian","19":"input_milkshakechocolate","20":"input_orangejuice","21":"input_lemonade","22":"input_cocacola","23":"input_coffee","24":"input_watermelonjuice"};
+      productID = {"0":"input_tea","1":"input_milkshakestrawberry","2":"input_margerita","3":"input_bolognese","4":"input_carbonara","5":"input_meatfeast","6":"input_mushroom","7":"input_pepperoni","8":"input_seafood","9":"input_vegetarian","10":"input_milkshakechocolate","11":"input_orangejuice","12":"input_lemonade","13":"input_cocacola","14":"input_coffee","15":"input_watermelonjuice"};
       paymentType = "product";
       JotForm.setCurrencyFormat('USD',true, 'point');
       JotForm.totalCounter({
@@ -92,18 +92,8 @@ JotForm.paymentCategoryHandler(true, true, {}, {});
       {"cid":"drinks","connectedCategories":"[\"drinks\"]","connectedProducts":"[]","corder":"1","customPrice":"","customPriceSource":"0","description":"Classic BLT plus our twist of fresh avocado on toasted wheat bread.Served with chips","fitImageToCanvas":"Yes","hasExpandedOption":"","hasQuantity":"1","hasSpecialPricing":"","icon":"","images":"[\"https://www.jotform.com/uploads/BellatrixL/form_files/Screen Shot 2020-07-07 at 21.10.41.png?nc=1\"]","name":"The BLT+AA","options":[{"type":"quantity","properties":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10","name":"Quantity","defaultQuantity":"","specialPricing":false,"specialPrices":"","expanded":false}],"period":"Monthly","pid":"tea","price":"3","recurringtimes":"No Limit","required":"","selected":"","setupfee":"","showSubtotal":"0","trial":""}]}}
       JotForm.setPhoneMaskingValidator( 'input_11_full', '(###) ###-####' );
 
- JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
- JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
- JotForm.calendarOther = {"today":"Today"};
- var languageOptions = document.querySelectorAll('#langList li'); 
- for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
-   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("14", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
- } 
- JotForm.onTranslationsFetch(function() { JotForm.setCalendar("14", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); });
- JotForm.displayLocalTime("input_14_hourSelect", "input_14_minuteSelect","input_14_ampm", "input_14_timeInput", true);
 if (window.JotForm && JotForm.accessible) $('input_17').setAttribute('tabindex',0);
       JotForm.alterTexts(undefined);
-      JotForm.alterTexts({"couponApply":"Apply","couponBlank":"Please enter a coupon.","couponChange":"","couponEnter":"Enter coupon","couponExpired":"Coupon is expired. Please try another one.","couponInvalid":"Coupon is invalid.","couponValid":"Coupon is valid.","shippingShipping":"Shipping","taxTax":"Tax","totalSubtotal":"Subtotal","totalTotal":"Total"}, true);
 	/*INIT-END*/
 	});
 
@@ -131,7 +121,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
 </script>
 </head>
 <body>
-<form class="jotform-form" action="https://submit.jotform.com/submit/222273335555960/" method="post" name="form_222273335555960" id="222273335555960" accept-charset="utf-8" autocomplete="on" novalidate="true">
+<form class="jotform-form" method="post" name="form_222273335555960" id="222273335555960" accept-charset="utf-8" autocomplete="on" novalidate="true">
   <input type="hidden" name="formID" value="222273335555960">
   <input type="hidden" id="JWTContainer" value="">
   <input type="hidden" id="cardinalOrderNumber" value="">
@@ -1242,11 +1232,11 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
         <div id="cid_9" class="form-input" data-layout="full">
           <div data-wrapper-react="true">
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <input type="text" id="first_9" name="q9_name[first]" class="form-textbox" data-defaultvalue="" autocomplete="section-input_9 given-name" size="10" value="" data-component="first" aria-labelledby="label_9 sublabel_9_first">
+              <input type="text" id="first_9" name="q9_name[first]" class="form-textbox for_input_margin" data-defaultvalue="" autocomplete="section-input_9 given-name" size="10" value="" data-component="first" aria-labelledby="label_9 sublabel_9_first">
               <label class="form-sub-label" for="first_9" id="sublabel_9_first" style="min-height:13px" aria-hidden="false"> First Name </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
-              <input type="text" id="last_9" name="q9_name[last]" class="form-textbox" data-defaultvalue="" autocomplete="section-input_9 family-name" size="15" value="" data-component="last" aria-labelledby="label_9 sublabel_9_last">
+              <input type="text" id="last_9" name="q9_name[last]" class="form-textbox for_input_margin" data-defaultvalue="" autocomplete="section-input_9 family-name" size="15" value="" data-component="last" aria-labelledby="label_9 sublabel_9_last">
               <label class="form-sub-label" for="last_9" id="sublabel_9_last" style="min-height:13px" aria-hidden="false"> Last Name </label>
             </span>
           </div>
@@ -1256,7 +1246,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
         <label class="form-label form-label-left" id="label_10" for="input_10"> Email </label>
         <div id="cid_10" class="form-input" data-layout="half">
           <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="email" id="input_10" name="q10_email" class="form-textbox validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_10 sublabel_input_10">
+            <input type="email" id="input_10" name="q10_email" class="form-textbox for_input_margin validate[Email]" data-defaultvalue="" style="width:310px" size="310" value="" data-component="email" aria-labelledby="label_10 sublabel_input_10">
             <label class="form-sub-label" for="input_10" id="sublabel_input_10" style="min-height:13px" aria-hidden="false"> example@example.com </label>
           </span>
         </div>
@@ -1265,79 +1255,31 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
         <label class="form-label form-label-left" id="label_11" for="input_11_full"> Phone Number </label>
         <div id="cid_11" class="form-input" data-layout="half">
           <span class="form-sub-label-container" style="vertical-align:top">
-            <input type="tel" id="input_11_full" name="q11_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autocomplete="section-input_11 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_11 sublabel_11_masked" inputmode="text" maskvalue="(###) ###-####">
+            <input type="tel" id="input_11_full" name="q11_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox for_input_margin validate[Fill Mask]" data-defaultvalue="" autocomplete="section-input_11 tel-national" style="width:310px" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_11 sublabel_11_masked" inputmode="text" maskvalue="(###) ###-####">
             <label class="form-sub-label" for="input_11_full" id="sublabel_11_masked" style="min-height:13px" aria-hidden="false"> Please enter a valid phone number. </label>
           </span>
         </div>
       </li>
-      <li class="form-line" data-type="control_radio" id="id_13">
+      <li class="form-line input_size" data-type="control_radio" id="id_13">
         <label class="form-label form-label-top form-label-auto" id="label_13" for="input_13"> Do you want to pick up your order? </label>
         <div id="cid_13" class="form-input-wide" data-layout="full">
           <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_13" data-component="radio">
             <span class="form-radio-item">
               <span class="dragger-item">
               </span>
-              <input type="radio" aria-describedby="label_13" class="form-radio" id="input_13_0" name="q13_doYou13" value="Yes.">
-              <label id="label_input_13_0" for="input_13_0"> Yes. </label>
+              <input type="radio" aria-describedby="label_13" class="form-radio" id="input_13_0" name="q13_doYou13" checked="" value="Yes.">
+              <label id="label_input_13_0" style="width: 32%" for="input_13_0"> Yes. </label>
             </span>
             <span class="form-radio-item">
               <span class="dragger-item">
               </span>
-              <input type="radio" aria-describedby="label_13" class="form-radio" id="input_13_1" name="q13_doYou13" checked="" value="No, I request for a delivery.">
-              <label id="label_input_13_1" for="input_13_1"> No, I request for a delivery. </label>
+              <input type="radio" aria-describedby="label_13" class="form-radio" id="input_13_1" name="q13_doYou13" value="No, I request for a delivery.">
+              <label id="label_input_13_1" style="width: 110%" for="input_13_1"> No, I request for a delivery. </label>
             </span>
           </div>
         </div>
       </li>
-      <li class="form-line allowTime form-field-hidden input_size" style="display: none !important;" data-type="control_datetime" id="id_14">
-        <label class="form-label form-label-top form-label-auto" id="label_14" for="lite_mode_14"> Date and Time For Pickup </label>
-        <div id="cid_14" class="form-input-wide" data-layout="full">
-          <div data-wrapper-react="true" class="extended">
-            <div style="display:none">
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[limitDate]" id="month_14" name="q14_dateAnd[month]" size="2" data-maxlength="2" data-age="" maxlength="2" value="" autocomplete="section-input_14 off" aria-labelledby="label_14 sublabel_14_month" inputmode="numeric">
-                <span class="date-separate" aria-hidden="true">
-                  &nbsp;-
-                </span>
-                <label class="form-sub-label" for="month_14" id="sublabel_14_month" style="min-height:13px" aria-hidden="false"> Month </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[limitDate]" id="day_14" name="q14_dateAnd[day]" size="2" data-maxlength="2" data-age="" maxlength="2" value="" autocomplete="section-input_14 off" aria-labelledby="label_14 sublabel_14_day" inputmode="numeric">
-                <span class="date-separate" aria-hidden="true">
-                  &nbsp;-
-                </span>
-                <label class="form-sub-label" for="day_14" id="sublabel_14_day" style="min-height:13px" aria-hidden="false"> Day </label>
-              </span>
-              <span class="form-sub-label-container" style="vertical-align:top">
-                <input type="tel" class="form-textbox validate[limitDate]" id="year_14" name="q14_dateAnd[year]" size="4" data-maxlength="4" data-age="" maxlength="4" value="" autocomplete="section-input_14 off" aria-labelledby="label_14 sublabel_14_year">
-                <label class="form-sub-label" for="year_14" id="sublabel_14_year" style="min-height:13px" aria-hidden="false"> Year </label>
-              </span>
-            </div>
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_14" size="12" data-maxlength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" autocomplete="section-input_14 off" aria-labelledby="label_14 sublabel_14_litemode" inputmode="numeric">
-              <img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_14_pick" src="./Order Now_files/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="Yes" data-version="v2">
-              <label class="form-sub-label" for="lite_mode_14" id="sublabel_14_litemode" style="min-height:13px" aria-hidden="false"> Date </label>
-            </span>
-            <span class="allowTime-container timeAMPM">
-              <div data-wrapper-react="true">
-                <span class="form-sub-label-container hasAMPM" style="vertical-align:top">
-                  <input type="text" class="time-dropdown form-textbox" id="input_14_timeInput" name="q14_dateAnd[timeInput]" placeholder="HH : MM" aria-labelledby="label_14 sublabel_14_hour" data-mask="hh:MM" value="" data-version="v2" inputmode="numeric">
-                  <input type="hidden" class="form-hidden-time" id="input_14_hourSelect" name="q14_dateAnd[hour]">
-                  <input type="hidden" class="form-hidden-time" id="input_14_minuteSelect" name="q14_dateAnd[min]">
-                  <label data-seperate-translate="true" class="form-sub-label" for="input_14_timeInput" id="sublabel_14_hour" style="min-height:13px" aria-hidden="false"> Hour Minutes </label>
-                </span>
-                <span class="form-sub-label-container" style="vertical-align:top">
-                  <select class="time-dropdown form-dropdown is-active" id="input_14_ampm" name="q14_dateAnd[ampm]" data-component="time-ampm" aria-labelledby="label_14 sublabel_14_ampm">
-                    <option selected="" value="AM"> AM </option>
-                    <option value="PM"> PM </option>
-                  </select>
-                  <label class="form-sub-label" for="input_14_ampm" id="sublabel_14_ampm" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" aria-hidden="false"> AM/PM Option </label>
-                </span>
-              </div>
-            </span>
-          </div>
-        </div>
-      </li>
+      
       <li class="form-line input_size" style="" data-type="control_address" id="id_12">
         <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12_addr_line1"> Delivery Address </label>
         <div id="cid_12" class="form-input-wide" data-layout="full">
@@ -1389,108 +1331,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
           <textarea id="input_17" class="form-textarea" name="q17_comments" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_17"></textarea>
         </div>
       </li>
-      <li class="form-line" data-type="control_paymentmethods" id="id_23">
-        <label class="form-label form-label-top" id="label_23" for="input_23"> Payment Methods </label>
-        <div id="cid_23" class="form-input-wide" data-layout="full">
-          <div class="payment-methods-area">
-            <div data-wrapper-react="true" class="paypalcomplete-payment-wrapper" data-sandbox="enabled" data-currency="USD" data-billing-address="12" data-auth-only="No" data-show-spb="true" data-show-card-fields="true">
-              <div id="paypal-commerce-platform-container">
-                <div class="paypal-toggle-buttons">
-                  <div class="paypal-toggle">
-                    <div id="paypal-card-fields">
-                      <div class="payment-method-container" data-id="paypal-card-fields">
-                        <input type="radio" class="form-radio" name="paypal-payment-method" data-id="paypal-card-fields" id="paypal-card-fields-input" aria-describedby="label_23">
-                        <label for="paypal-card-fields-input">
-                          <span class="CC_ico">
-                          </span>
-                          Debit or Credit Card
-                        </label>
-                      </div>
-                    </div>
-                    <div id="paypal-smart-buttons">
-                      <div class="payment-method-container" data-id="paypal-smart-buttons">
-                        <input type="radio" class="form-radio" name="paypal-payment-method" data-id="paypal-smart-buttons" id="paypal-smart-buttons-input" aria-label="Paypal" aria-describedby="label_23">
-                        <label for="paypal-smart-buttons-input">  </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="paypal-toggle-content input_size" render-paypal-type="paypal-card-fields">
-                  <div class="content-area">
-                    <div id="paypal-credit-card-fields">
-                      <div class="paypal-commerce-platform">
-                        <div class="paypal-content">
-                          <div id="payments-sdk__contingency-lightbox">
-                              </div><table class="form-address-table payment-form-table" style="border:0" cellpadding="0" cellspacing="0">
-                            <tbody>
-                              <tr>
-                                <td width="50%">
-                                  <span class="form-sub-label-container" style="vertical-align:top">
-                                    <input type="text" id="22_cc_firstName" name="q22_menu[cc_firstName]" class="form-textbox cc_firstName" data-defaultvalue="" size="20" value="" data-component="cc_firstName">
-                                    <label class="form-sub-label" for="22_cc_firstName" id="sublabel_cc_firstName" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> First Name </label>
-                                  </span>
-                                </td>
-                                <td width="50%">
-                                  <span class="form-sub-label-container" style="vertical-align:top">
-                                    <input type="text" id="22_cc_lastName" name="q22_menu[cc_lastName]" class="form-textbox cc_lastName" data-defaultvalue="" size="20" value="" data-component="cc_lastName">
-                                    <label class="form-sub-label" for="22_cc_lastName" id="sublabel_cc_lastName" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Last Name </label>
-                                  </span>
-                                </td>
-                              </tr>
-                              <tr class="if_cc_field">
-                                <td width="50%">
-                                  <span class="form-sub-label-container" style="vertical-align:top">
-                                    <div class="form-textbox cc_numberMount cc_number">
-                                    </div>
-                                    <label class="form-sub-label" for="22_cc_number" id="sublabel_cc_number" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Credit Card Number </label>
-                                  </span>
-                                </td>
-                                <td width="50%">
-                                  <span class="form-sub-label-container" style="vertical-align:top">
-                                    <div class="form-textbox cc_ccvMount cc_ccv">
-                                    </div>
-                                    <label class="form-sub-label" for="22_cc_ccv" id="sublabel_cc_ccv" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Security Code </label>
-                                  </span>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td width="50%">
-                                  <span class="form-sub-label-container" style="vertical-align:top">
-                                    <div class="form-textbox cc_cardExpiryMount cc_card_expiry">
-                                    </div>
-                                    <label class="form-sub-label" for="22_cc_card_expiry" id="sublabel_cc_card_expiry" style="min-height:13px;margin:0 0 3px 0" aria-hidden="false"> Card Expiration </label>
-                                  </span>
-                                </td>
-                                <td width="50%">
-                                  </td></tr><tr style="display:none">
-                                    <td>
-                                      <input id="paypal_complete_dummy" style="display:none" class="">
-                                    </td>
-                                  </tr>
-                                
-                              
-                              
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="paypal-spb-area">
-                      <p>Please click one of the PayPal options to complete payment and <b>submit</b> the form.</p>
-                      <div id="paypal-button-container" style="pointer-events:">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="paypal-paylater-messages" style="display: none; padding-top: 12px;">
-                    <div class="message-area" data-pp-amount="12">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <input type="hidden" id="input_23_payment_method" name="q23_paymentMethods[payment_method]" class="" data-defaultvalue="" value="" data-component="payment_method">
-          </div>
-        </div>
+      <li class="form-line" data-type="control_paymentmethods" id="id_23">        
       </li>
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide" data-layout="full">
@@ -1510,9 +1351,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"orderNow","qid":"1","text":"Order N
   <script>
   JotForm.showJotFormPowered = "new_footer";
   </script>
-  <script>
-  JotForm.poweredByText = "Powered by Jotform";
-  </script>
+  
   <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="222273335555960-222273335555960">
   <script type="text/javascript">
   var all_spc = document.querySelectorAll("form[id='222273335555960'] .si" + "mple" + "_spc");

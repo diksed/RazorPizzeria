@@ -8179,6 +8179,11 @@ iframe[data-client-id="5295b800485bd19f5d000005"] {
     pointer-events: none
 }
 
-.input_size{
+.input_size {
     width: 50%;
+    margin-left: 25%;
+}
+
+.for_input_margin{
+    margin-top: 3%; 
 }
