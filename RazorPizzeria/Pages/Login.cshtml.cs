@@ -53,8 +53,9 @@ namespace RazorPizzeria.Pages
                 var claims = new List<Claim>();
                 claims.Add(new Claim("UserName", Credential.UserName));
                 claims.Add(new Claim(ClaimTypes.NameIdentifier, Credential.UserName));
+                claims.Add(new Claim("Department","HR"));
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity); 
                 await HttpContext.SignInAsync(claimsPrincipal);
                 return RedirectToPage("/Orders");
 
